@@ -6,9 +6,19 @@
     }
 }
 
-@mixin center-horizontal-vertical{
-    position: absolute;
+@mixin center-horizontal-vertical($position:absolute){
+    position: $position;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+@mixin hide-element{
+    opacity: 0;
+    visibility: hidden;
+}
+
+@mixin show-element{
+    opacity: 1;
+    visibility: visible;
 }
